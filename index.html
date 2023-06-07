@@ -15,28 +15,12 @@
         font-size: 34px;
         padding-bottom: 5px;
     }
-
-
-    div.container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 0px;
-        width: 100%;
+    div.div-aluno {
+        background-color: blueviolet;
     }
-
-    .content {
-        margin-top: 100px;
-        margin-right: 50px;
-        margin-bottom: 50px;
-        margin-left: 200px;
-        padding-right: 230px;
-    }
-
-    .container img {
-        margin-top: 100px;
-        max-width: 400px;
-        display: inline-block;
-        margin-right: 200px;
+    .chico {
+ max-width: 100px;
+ max-height: 100px;
     }
 </style>
 
@@ -69,23 +53,40 @@
 
     </div>
     <div class="container">
-        <div class="content">
-            <p> O Colégio Estadual do Paraná (CEP) é um tradicional estabelecimento público de ensino do Paraná,
-                localizado na cidade de Curitiba.</p>
-            <p> Considerada a maior e mais antiga escola pública do estado, atende aproximadamente 5.200 alunos
-                anualmente. </p>
-            <p>A escola oferece Ensino Fundamental e Médio: Curso Técnico Integrado e Curso Técnico Subseqüente. O CEP é
-                uma instituição vinculada à Secretaria de Estado da Educação. </p>
-
-
-            <p>O Colégio Estadual é uma das poucas escolas públicas do estado sem eleição para diretores. </p>Em 1974, o
-            CEP foi transformado em Órgão de Regime Especial, passando a ter relativa autonomia e maior orçamento. O
-            diretor é indicado diretamente pelo Governo do Paraná, fato encerrado em 2010 após manifestações da
-            comunidade do Colégio.
+    </section>
+    <section id="quem-somos">
+        <h2 class="quem-somos-titulo">Quem somos?</h2>
+        <div class="alunos-todos">
+            <div class="div-aluno">
+                <img class="alunos-fotos" src="chico.png" alt="foto do aluno" style="width: 400px; height: 400px;">
+                <h3 class="nome-aluno">Davi Fialho do Nascimento (chico)</h3>
+                <p>Um texto de apresentação sobre o aluno, no qual ele coloca informações que julga pertinente e que
+                    gostaria que soubessemos sobre ele.
+                </p>
+            </div>
+            <div class="alunos-div">
+                <img class="chico" src="g-01.png" alt="foto do aluno">
+                <h3 class="nome-aluno">Aluno 02 da turma XXX</h3>
+                <p>Um texto de apresentação sobre o aluno, no qual ele coloca informações que julga pertinente e que
+                    gostaria que soubessemos sobre ele.
+                </p>
+            </div>
+            <div class="alunos-div">
+                <img class="alunos-fotos" src="g-01.png" alt="foto do aluno">
+                <h3 class="nome-aluno">Aluno 03 da turma XXX</h3>
+                <p>Um texto de apresentação sobre o aluno, no qual ele coloca informações que julga pertinente e que
+                    gostaria que soubessemos sobre ele.
+                </p>
+            </div>
+            <div class="alunos-div">
+                <img class="alunos-fotos" src="g-01.png" alt="foto do aluno">
+                <h3 class="nome-aluno">Aluno 04 da turma XXX</h3>
+                <p>Um texto de apresentação sobre o aluno, no qual ele coloca informações que julga pertinente e que
+                    gostaria que soubessemos sobre ele.
+                </p>
+            </div>
         </div>
-        <div class="image">
-            <img src="cep.jpg">
-        </div>
+    </section>
     </div>
     <footer style="background-color: rgb(0, 163, 232); text-align: center; margin-top: 200px;">
         samuelmenon49@gmail.com <br />
