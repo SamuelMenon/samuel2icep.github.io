@@ -5,89 +5,122 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>início</title>
+    <title>biologia(1)</title>
 </head>
 <style>
-    .tittle {
+    body , ul {
+        margin: 0;
+        padding: 0;
+    }
+    a {
+        color: white;
+        text-decoration: none;
+        font-family: sans-serif;
+        font-size: 2em;
+    }
+    #biologia {
+        font-size: 2.5em;
+        font-weight: bold;
+        color: black;
+    }
+    #header {
+        display: flex;
+    }
+    #menu {
+        display: flex;
+        list-style: none;
+        gap: 5%;
+        background-color: rgb(179, 99, 230);
+        padding: 1rem;
         text-align: center;
-        width: 100%;
-        background-color: rgb(0, 163, 232);
-        font-size: 34px;
-        padding-bottom: 5px;
+        padding-right: 5%;
+        padding-left: 10%;
     }
-
-
+    a:hover {background: rgba(0, 0, 0, 0.4)}
     div.container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 0px;
-        width: 100%;
+        font-family: sans-serif;
+        background-color: rgb(201, 161, 225);
+        margin-left: 20%;
+        margin-right: 20%;
     }
-
-    .content {
-        margin-top: 100px;
-        margin-right: 50px;
-        margin-bottom: 50px;
-        margin-left: 200px;
-        padding-right: 230px;
+    div.alunos {
+        text-align: center;
+        color: white;
+        font-family: sans-serif;
     }
-
-    .container img {
-        margin-top: 100px;
-        max-width: 400px;
-        display: inline-block;
-        margin-right: 200px;
-    }
+.aluno {
+    background-color: rgb(0, 110, 210);
+}
+.aluno2 {
+    background-color: rgb(0, 90, 190);
+}
+.aluno3 {
+    background-color: rgb(0, 70, 160);
+}
+.aluno4 {
+    background-color: rgb(0, 35, 130);
+}
+.bo {
+    background-image: url(pink.png);
+}
 </style>
 
-<body>
-    <div class="tittle">
-        <h1>
-            <img src="titulocep.jpg">
-        </h1>
-
-        <ul style="color: white;">
-           <il>
-            <a href="index.html" style="color:rgb(255, 253, 253); padding-right: 8%;">Início</a>
-        </il>
-        <il>
-            <a href="formulario.html" style="color: white; padding-right: 8%;">Formulário</a>
-        </il>
-        <il>
-            <a href="biologia1.html" style="color: rgb(0, 0, 0); padding-right: 8%;">Biologia I</a>
-        </il>
-        <il>
-            <a href="matematica1.html" style="color: white; padding-right: 8%;">Matemática I</a>
-        </il>
-        <il>
-            <a href="fisica1.html" style="color: white; padding-right: 8%; ">Fisíca I</a>
-        </il>
-        <il>
-            <a href="mat2.html" style="color: white; padding-right: 8%;">Matemática II</a>
-            </il>
-        </ul>
-
-    </div>
+<body class="bo">
+    <header id="header1">
+        <nav id="nav1">
+            <ul id="menu">
+                <il>
+                    <a href="index.html" id="inicio">Início</a>
+                </il>
+                <il>
+                    <a href="formulario.html" id="formulario">Formulário</a>
+                </il>
+                <il>
+                    <a href="biologia1.html" id="biologia">Biologia I</a>
+                </il>
+                <il>
+                    <a href="matematica1.html" id="matematica1">Matemática I</a>
+                </il>
+                <il>
+                    <a href="fisica1.html" id="fisica">Fisíca I</a>
+                </il>
+                <il>
+                    <a href="mat2.html" ide="matematica2">Matemática II</a>
+                    </il>
+            </ul>
+        </nav>
+    </header>
     <div class="container">
-        <div class="content">
-            <p> O Colégio Estadual do Paraná (CEP) é um tradicional estabelecimento público de ensino do Paraná,
-                localizado na cidade de Curitiba.</p>
-            <p> Considerada a maior e mais antiga escola pública do estado, atende aproximadamente 5.200 alunos
-                anualmente. </p>
-            <p>A escola oferece Ensino Fundamental e Médio: Curso Técnico Integrado e Curso Técnico Subseqüente. O CEP é
-                uma instituição vinculada à Secretaria de Estado da Educação. </p>
-
-
-            <p>O Colégio Estadual é uma das poucas escolas públicas do estado sem eleição para diretores. </p>Em 1974, o
-            CEP foi transformado em Órgão de Regime Especial, passando a ter relativa autonomia e maior orçamento. O
-            diretor é indicado diretamente pelo Governo do Paraná, fato encerrado em 2010 após manifestações da
-            comunidade do Colégio.
-        </div>
-        <div class="image">
-            <img src="cep.jpg">
-        </div>
+        <h2 class="titiulo.div" style="text-align: center; padding-bottom: 400px; margin-bottom:400px ;">As atividades realizadas pelo grupo aparecerão aqui:</h2>
+      <!--  <div class="alunos">
+            <div class="aluno">
+                <img class="alunos-fotos" src="chico.png" alt="foto do aluno" style="width: 400px; height: 300px;">
+                <h3 class="nome-aluno">Davi Fialho do Nascimento (Chico)</h3>
+                <p> Um homem com carência de afeto feminino, bonito e de bom coração. Gosta de matemática e coisas relacionadas. 
+                </p>
+            </div>
+            <div class="aluno2">
+                <img class="chico" src="samuel.png" alt="foto do aluno"  style="width: 400px; height: 300px;">
+                <h3 class="nome-aluno">Samuel Menon Alves de Lima (Samuel)</h3>
+                <p> Um homem de porte atlético, que gosta de esportes, xadrez, handball e educação fisíca. Também esperto, bonito e virtuoso.
+                </p>
+            </div>
+            <div class="aluno3">
+                <img class="alunos-fotos" src="jao.png" altt="foto do aluno"  style="width: 400px; height: 300px;">
+                <h3 class="nome-aluno">João Augusto Moro Vieira Filho (Jão)</h3>
+                <p> Um homem de classe, lutador de taekwondo, gosta de treinar e ficar 1% melhor a cada dia. 
+                </p>
+            </div>
+            <div class="aluno4">
+                <img class="alunos-fotos" src="kaua.png" alt="foto do aluno"  style="width: 400px; height: 300px;">
+                <h3 class="nome-aluno">Kauan Machado (Japonegro)</h3>
+                <p> Um jovem empreendedor, em busca de uma trama romantica com uma loira esudante do CEP, seguidor de deus.
+                </p>
+            </div>
+        </div>-->
+    </section>
     </div>
-    <footer style="background-color: rgb(0, 163, 232); text-align: center; margin-top: 200px;">
+    <footer style="background-color: rgb(179, 99, 230); text-align: center; font-family: sans-serif; color: white;">
         samuelmenon49@gmail.com <br />
         Samuel Menon Alves de Lima <br />
         2°i N°30 <br />
