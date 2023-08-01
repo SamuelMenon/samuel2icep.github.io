@@ -8,6 +8,7 @@
     <title>início</title>
 </head>
 <style>
+    @media screen and (min-width:669px){
     body , ul {
         margin: 0;
         padding: 0;
@@ -63,6 +64,65 @@
 .bo {
     background-image: url(bg.png);
 }
+    }
+    @media screen and (min-width:390px) and (max-width:669px) {  body , ul {
+        margin: 0;
+        padding: 0;
+    }
+    a {
+        color: white;
+        text-decoration: none;
+        font-family: sans-serif;
+        font-size: 2em;
+    }
+    #inicio {
+        font-size: 2em;
+        font-weight: bold;
+        color: black;
+    }
+    #header {
+        display: flex;
+    }
+    #menu {
+        display: flex;
+        list-style: none;
+        gap: 5%;
+        background-color: rgb(0, 72, 255);
+        padding: 1rem;
+        text-align: center;
+        padding-right: 5%;
+        padding-left: 10%;
+    }
+    a:hover {background: rgba(0, 0, 0, 0.5)}
+    div.container {
+        font-family: sans-serif;
+        background-color: rgb(0, 163, 232);
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    div.alunos {
+        text-align: center;
+        color: white;
+        font-family: sans-serif;
+    }
+    }
+.aluno {
+    background-color: rgb(0, 110, 210);
+}
+.aluno2 {
+    background-color: rgb(0, 90, 190);
+}
+.aluno3 {
+    background-color: rgb(0, 70, 160);
+}
+.aluno4 {
+    background-color: rgb(0, 35, 130);
+}
+.bo {
+    background-image: url(bg.png);
+}
+}
+@media screen and (max-width:390px){
 </style>
 
 <body class="bo">
