@@ -134,7 +134,142 @@
                 se inicia novamente. 
                 <br />
                 <img src="semaforo.jpg" style="width:400px; height: 400px;">
-        </section>
+                <br />
+                int redLED = 6;
+                <br />
+int yellowLED = 7;
+<br />
+int greenLED = 8;
+<br />
+int button = 9;
+<br />
+int buzzer = 10;
+<br />
+int pedestrianRed = 1;
+<br />
+int pedestrianGreen = 13;
+<br />
+int value = 0;
+<br />
+void greenCars() { // turn on the green LED for cars and the red LED for pedestrians, and turn off the rest
+    <br />
+    digitalWrite(redLED, LOW);
+    <br />
+    digitalWrite(yellowLED, LOW);
+    <br />
+    digitalWrite(greenLED, HIGH);
+    <br />
+    digitalWrite(pedestrianRed, HIGH);
+    <br />
+    digitalWrite(pedestrianGreen, LOW);
+    <br />
+}
+<br />
+
+void yellowCars() { // turn off the green LED that was turned on before
+    <br />
+    digitalWrite(redLED, LOW);
+    <br />
+    digitalWrite(greenLED, LOW);
+    <br />
+    for (int i = 0; i < 11; i++) { // loop to turn on and off the yellow LED with a delay of 300 milliseconds between actions
+        <br />
+        digitalWrite(yellowLED, HIGH);
+        <br />
+        delay(300);
+        <br />
+        digitalWrite(yellowLED, LOW);
+        <br />
+        delay(300);
+        <br />
+    }
+    <br />
+}
+<br />
+
+void redCars() { // turn on the green LED for pedestrians and the red LED for cars, and turn off the rest
+    <br />
+    digitalWrite(yellowLED, LOW);
+    <br />
+    digitalWrite(redLED, HIGH);
+    <br />
+    digitalWrite(pedestrianRed, LOW);
+    <br />
+    digitalWrite(pedestrianGreen, HIGH);
+    <br />
+    for (int i = 0; i < 20; i++) { // make the buzzer constantly sound for 10 seconds
+        <br />
+        tone(buzzer, 500);
+        <br />
+        delay(200);
+        <br />
+        noTone(buzzer);
+        <br />
+        delay(100);
+        <br />
+    }
+    <br />
+    for (int i = 0; i < 11; i++) { // make the buzzer sound intermittently for 10 seconds
+        <br />
+        
+        digitalWrite(pedestrianGreen, HIGH);
+        <br />
+        tone(buzzer, 1000);
+        <br />
+        delay(300);
+        <br />
+        digitalWrite(pedestrianGreen, LOW);
+        <br />
+        noTone(buzzer);
+        <br />
+        delay(300);
+        <br />
+    }
+    <br />
+}
+
+
+<br />
+void setup() { // declare all inputs and outputs
+    <br />
+    pinMode(button, INPUT);
+    <br />
+    pinMode(redLED, OUTPUT);
+    <br />
+    pinMode(yellowLED, OUTPUT);
+    <br />
+    pinMode(greenLED, OUTPUT);
+    <br />
+    pinMode(buzzer, OUTPUT);
+    <br />
+    pinMode(pedestrianRed, OUTPUT);
+    <br />
+    pinMode(pedestrianGreen, OUTPUT);
+    <br />
+}
+
+
+<br />
+void loop() { // main function loop that uses the other functions
+    <br />
+    greenCars();
+    <br />
+    value = digitalRead(button);
+    <br />
+    if (value == HIGH) {
+        <br />
+        yellowCars();
+        <br />
+        redCars();
+        <br />
+        value = LOW;
+        <br />
+    }
+    <br />
+}
+<br />
+<img src="semaforo2.png" style="width: 400px; height: 400px;">
+</section>
     </div>
     <footer style="background-color: rgb(179, 99, 230); text-align: center; font-family: sans-serif; color: white;">
         samuelmenon49@gmail.com <br />
