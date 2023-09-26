@@ -66,12 +66,3 @@ h1 {
 .tecla:active:focus {
   box-shadow: 3px 3px 0 var(--vermelha-escura) inset, 1px 1px 10px var(--luz);
 }
-a:hover {background: rgba(0, 0, 0, 0.4)}
-#menu {
-  display: flex;
-  list-style: none;
-  gap: 5%;
-  background-color: rgb(179, 99, 230);
-  padding: 1rem;
-  text-align: center;
-}
