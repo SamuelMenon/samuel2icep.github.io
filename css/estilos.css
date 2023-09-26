@@ -22,7 +22,6 @@ body {
   gap: 10px;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  text-align: center;
    padding: 10px;
    justify-content: center;
 }
@@ -59,4 +58,7 @@ body {
 .tecla.active:focus,
 .tecla:active:focus {
   box-shadow: 3px 3px 0 var(--vermelha-escura) inset, 1px 1px 10px var(--luz);
+}
+button {
+  align-items: center;
 }
