@@ -21,7 +21,9 @@ body {
   display: grid;
   gap: 10px;
   grid-template-columns: repeat(3, 1fr);
-  padding: 10px;
+  align-items: center;
+   padding: 10px;
+   justify-content: center;
 }
 
 .tecla {
