@@ -1,1 +1,0 @@
-const placar = `#quantd${contador}`; 
