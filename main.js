@@ -1,3 +1,4 @@
+
 function tocar(idAudio) {
     document.querySelector(idAudio).play();
 }
@@ -19,7 +20,8 @@ while (contador < lista.length) {
 
     tecla.onkedown = function (evento) {
         tecla.classList.add('ativa')
-        console.log(evento.code === 'space');
+        console.log(evento.code === 'space' || evento.code === 'Enter');
+    
     }
     tecla.onkeyup = function () {
         tecla.classList.remove('ativa');
