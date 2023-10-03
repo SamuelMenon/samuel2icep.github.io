@@ -19,7 +19,7 @@ while (contador < lista.length) {
 
     tecla.onkedown = function (evento) {
         tecla.classList.add('ativa')
-        console.log(evento.code);
+        console.log(evento.code === 'space');
     }
     tecla.onkeyup = function () {
         tecla.classList.remove('ativa');
